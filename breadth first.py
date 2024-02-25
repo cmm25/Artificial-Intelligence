@@ -35,6 +35,6 @@ def apply_move(x, y, move):
 # Find the path from (0, 0) to (2, 0) or (0, 2)
 bfs_path = bfs_jug_problem(0, 0)
 if bfs_path:
-    print("BFS Path:", bfs_path)
+    print("BreadthFirstSearch Path:", bfs_path)
 else:
-    print("No solution found using BFS.")
+    print("No solution found using BreadthFirstSearch.")
