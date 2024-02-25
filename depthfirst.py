@@ -20,13 +20,13 @@ def apply_move(x, y, move):
     if move == "fill_x":
         return 3, y
     elif move == "fill_y":
-        return x, 5
+        return x, 4
     elif move == "empty_x":
         return 0, y
     elif move == "empty_y":
         return x, 0
     elif move == "pour_x_to_y":
-        transfer = min(x, 5 - y)
+        transfer = min(x, 4 - y)
         return x - transfer, y + transfer
     elif move == "pour_y_to_x":
         transfer = min(y, 3 - x)
@@ -35,6 +35,6 @@ def apply_move(x, y, move):
 # Find the path from (0, 0) to (2, 0) or (0, 2)
 dfs_path = dfs_jug_problem(0, 0)
 if dfs_path:
-    print("DFS Path:", dfs_path)
+    print("DFS Shortest Path:", dfs_path)
 else:
     print("No solution found using DFS.")
