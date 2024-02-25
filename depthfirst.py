@@ -1,4 +1,3 @@
-# Depth-First Search (DFS) Solution
 def dfs_jug_problem(x, y, target_x=2, target_y=0, path=None):
     if path is None:
         path = []
